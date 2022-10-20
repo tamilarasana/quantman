@@ -33,7 +33,7 @@
 			<div class="navbar-r">
 				<ul>
 					<li><a  href="#" class="buyPlan">Buy a Plan </a></li>
-					<li><button  class="logIn">Log In</button></li>
+					<li><button  class="logIn" id="myBtn" >Log In</button></li>
 				</ul>
 			</div>
 			</li>
@@ -77,10 +77,88 @@
       </div>
     </nav>
     <!-- Main Container -->
-    <div class="container">
+    <div class="container">      
+
+        <!-- Login Page -->
+        <div id="myModal" class=" modal">
+          <!-- Modal content -->
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <!-- Login form -->
+              <form action="" class="form  " id="login">
+                <h1 class="form-title">Login</h1>
+                <div class="form-message form-message-error"></div>
+                <div class="input-container">
+                    <input type="text" class="form-input" autofocus placeholder="Username or Email id">
+                </div>
+                <div class="input-container">
+                    <input type="password" class="form-input "  autofocus placeholder="Password">
+                </div>
+                <button class="form-button">Continue</button>
+                <p class="form-text">
+                    <a href="#" id="linkForgotPassword" class="form-link">Forgot Password</a>
+                </p>
+                <p class="form-text">
+                    <a href="#" id="createBtn"class="form-link">Don't have an account? Create one</a>
+                </p>
+            </form>
+          </div>
+        
+        </div>
+        <div id="createModal" class="createmodal">
+          <div class="modal-content">
+            <span class="createclose">&times;</span>
+            <form action="" class="form form-hidden " id="creatAccount">
+              <h1 class="form-title">Creat Account</h1>
+              <div class="form-message form-message-error"></div>  
+              <div class="input-container">
+                  <input type="text" class="form-input" autofocus placeholder="Username">
+              </div>  
+              <div class="input-container">
+                  <input type="text" class="form-input" placeholder="Email Address">
+              </div>  
+              <div class="input-container">
+                  <input type="password" class="form-input " placeholder="Password">
+              </div>
+                <div class="input-container">
+                  <input type="password" class="form-input " placeholder="Conform Password">
+              </div>  
+              <button class="form-button">Login </button>  
+              <p class="form-text">
+                  <a href="#" id="linkLogin" class="form-link">Alrady have an account? Sign in</a>
+              </p>  
+          </form>
+          </div>        
+        </div>
+        <div id="resetPassword" class="resetPassword">
+          <div class="modal-content">
+            <span class="resetclose">&times;</span>
+            <form action="" class="form form-hidden" id="resetPassword">
+              <h1 class="form-title">Reset Password</h1>
+              <div class="form-message form-message-error"></div>
+  
+              <div class="input-container">
+                  <input type="text" class="form-input" autofocus placeholder="Password">
+              </div>
+  
+              <div class="input-container">
+                  <input type="password" class="form-input "  autofocus placeholder="Re-enter Password">
+              </div>
+  
+              <button class="form-button">Reset</button>
+  
+              <p class="form-text">
+                  <a href="#" id="linkBackLogin"  class="form-link">Back to Login Page</a>
+              </p>
+  
+          </form>
+          </div>        
+        </div>
+        <!-- End Login Page -->
+      
       <!-- <div class="content-area"> -->
         <div class="content-section">
-          <div class="content-left">
+          <div] class="content-left">
             <div class="card">
               <div class="card-header">
                 <h5 class="font-weight-semi">
@@ -98,52 +176,49 @@
                   </div>
                   <div class="common-component-arrow-accordion  card">
                     <div class="py-0 px-2 card-header">
-                      <div class="arrow-accordion-title">Margin (Funds Required)</div>
+                      <div class="arrow-accordion-title">Category</div>
                       <span class="accordion-rs prevent-collapse"></span>
                       <span class="action-section"></span>
                     </div>
                   </div>
                   <div class="common-component-arrow-accordion  card">
                     <div class="py-0 px-2 card-header">
-                      <div class="arrow-accordion-title">Margin (Funds Required)</div>
+                      <div class="arrow-accordion-title">Segments & Instruments</div>
                       <span class="accordion-rs prevent-collapse"></span>
                       <span class="action-section"></span>
                     </div>
-                  </div>
+                  </div> 
                   <div class="common-component-arrow-accordion  card">
                     <div class="py-0 px-2 card-header">
-                      <div class="arrow-accordion-title">Margin (Funds Required)</div>
+                      <div class="arrow-accordion-title">Segments & Instruments</div>
                       <span class="accordion-rs prevent-collapse"></span>
                       <span class="action-section"></span>
                     </div>
-                  </div>
+                  </div> 
                   <div class="common-component-arrow-accordion  card">
                     <div class="py-0 px-2 card-header">
-                      <div class="arrow-accordion-title">Margin (Funds Required)</div>
+                      <div class="arrow-accordion-title">Segments & Instruments</div>
                       <span class="accordion-rs prevent-collapse"></span>
                       <span class="action-section"></span>
                     </div>
-                  </div>
+                  </div> 
                   <div class="common-component-arrow-accordion  card">
                     <div class="py-0 px-2 card-header">
-                      <div class="arrow-accordion-title">Margin (Funds Required)</div>
+                      <div class="arrow-accordion-title">Segments & Instruments</div>
                       <span class="accordion-rs prevent-collapse"></span>
                       <span class="action-section"></span>
                     </div>
-                  </div>              
+                  </div> 
+                  <div class="common-component-arrow-accordion  card">
+                    <div class="py-0 px-2 card-header">
+                      <div class="arrow-accordion-title">Segments & Instruments</div>
+                      <span class="accordion-rs prevent-collapse"></span>
+                      <span class="action-section"></span>
+                    </div>
+                  </div>       
                 </div>
             </div>
           </div>
-            <div class="content-right">
-              <div class="content-right-card">
-                <div class="content-flex">
-                  <ul>
-                    <li>All Strategy</li>
-                    <span class="badge badge-secondary">38</span>
-                  </ul>
-                </div>
-              </div>
-            </div>
         </div>
       <!-- </div> -->
             
@@ -230,5 +305,9 @@
         </div>
     </div>
   </div>
+
+  <script src="main.js"></script>
+
+
   </body>
 </html>

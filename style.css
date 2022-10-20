@@ -12,6 +12,8 @@ body {
   /* font-size: 2rem; */
   line-height: 1.5;
   background-color: #F7F7F9;
+  height: 100vh;
+
   /* color: var(--color-body); */
 }
 
@@ -47,7 +49,7 @@ a {
   display: flex;
   color: white;
   background-color: rgb(33, 32, 32);
-  z-index: 100;
+  z-index: 10;
   width: 100%;
   justify-content: space-between;
   align-items: center;
@@ -152,6 +154,146 @@ a {
   margin-left: 1rem;
   margin-right: 1rem;
   background-color: #F7F7F9;
+}
+
+/* Login Page */
+
+.model{
+  display:none;
+}
+.createmodal{
+  display:none;
+}
+.resetPassword{
+  display:none;
+}
+.modal,.createmodal,.resetPassword {
+  display:none;
+  position: fixed; 
+  z-index: 1; 
+  padding-top: 100px; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.4); 
+
+}
+
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 450px;
+  max-width: 450px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+  border-radius: 1rem;
+}
+
+/* The Close Button */
+.close,.createclose,.resetclose {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+
+.close,.createclose,.resetclose:hover,
+.close,.createclose,.resetclose:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+  
+}
+
+@media only screen and (max-width: 950px) {
+  .modal,.createmodal,.resetPassword {
+    position: fixed; 
+    z-index: 1; 
+    padding-top:50%;
+  }
+  
+  .modal-content {
+    background-color: #fefefe;
+       width: 300px;
+   
+  }
+}
+
+.login-section{
+  width: 450px;
+  max-width: 450px; 
+  display: block;
+}
+
+.form-title{
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+.form-message{
+  font-size: small;
+  text-align: center;
+  margin-bottom: .8rem;
+}
+.input-container{
+  margin-bottom: .8rem;
+}
+
+.form-input{
+  width: 100%;
+  display: block;
+  padding: 0.8rem;
+  background: rgb(234, 234, 234);
+  outline: none;
+  border-radius: 1rem;
+  border: 1px solid #dddddd;
+}
+
+.form-button{
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  width: 100%;
+  padding: .8rem;
+  border-radius: 1rem;
+  border: none;
+  font-size: large;
+  background: rgb(45, 52, 255);
+  color: white;
+  cursor: pointer;
+  letter-spacing: 3px;
+}
+
+.form-button:hover{
+  background:rgb(18, 20, 85) ;
+}
+
+.form-text{
+  text-align: center;
+
+}
+
+.form-link{
+  display: inline-block;
+  text-decoration: none;
+  color: rgb(100, 100, 100);
+  font-size: 0.9rem;
+  margin-top: 1rem;
+  
+}
+.form-link:hover{
+  cursor: pointer;
+  color: #3b5de7; ;
+}
+
+.form-input:focus{
+  border-color: rgb(45, 52, 255);
+  background: white;
 }
 .content-section{
   display: flex;
@@ -312,7 +454,7 @@ a {
   bottom: 1px;
   padding: 8px;
   color: #222428;
-  z-index: 100;
+  z-index: 15;
 }
 
 .ft-section {
