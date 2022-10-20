@@ -1,43 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=, initial-scale=1.0" />
     <title>Quantman</title>
-    <link
-      href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined" rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
   </head>
+
   <body>
     <div class="navbar">
-			<div class="navbar-l">
-				<div>
-					<span><a href=""><img class="logo" src="images/download.png" alt=""></a></span>
-				</div>
-				<div>
-					<ul>
-						<!-- <li></li> -->
-						<li><a href="#">DashBoard</a></li>
-						<li><a href="#">My Strategies</a></li>
-						<li><a href="#">Create Strategy</a></li>
-						<li><a href="#">MarketPlace</a></li>
-						<li><a href="#">Video</a></li>
-						<li><a href="#">Faq</a></li>
-					</ul>
-				</div>
-			</div>
+      <div class="navbar-l">
+        <div>
+          <span><a href=""><img class="logo" src="images/download.png" alt=""></a></span>
+        </div>
+        <div>
+          <ul>
+            <!-- <li></li> -->
+            <li><a href="#">DashBoard</a></li>
+            <li><a href="#">My Strategies</a></li>
+            <li><a href="#">Create Strategy</a></li>
+            <li><a href="#">MarketPlace</a></li>
+            <li><a href="#">Video</a></li>
+            <li><a href="#">Faq</a></li>
+          </ul>
+        </div>
+      </div>
 
-			<div class="navbar-r">
-				<ul>
-					<li><a  href="#" class="buyPlan">Buy a Plan </a></li>
-					<li><button  class="logIn">Log In</button></li>
-				</ul>
-			</div>
-			</li>
-		</div>
+      <div class="navbar-r">
+        <ul>
+          <li><a href="#" class="buyPlan">Buy a Plan </a></li>
+          <li><button class="logIn">Log In</button></li>
+        </ul>
+      </div>
+      </li>
+    </div>
     <!-- Nav Bar Section -->
     <nav class="mobile-bottom-nav hide-minimal-content">
       <div class="bottom-nav-item active">
@@ -65,12 +69,7 @@
         </a>
       </div>
       <div class="bottom-nav-item position-static">
-        <div
-          class="bottom-nav-link dropdown-toggle"
-          data-toggle="dropdown"
-          aria-haspopup="true"
-          aria-expanded="false"
-        >
+        <div class="bottom-nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           <i class="material-icons">more_vert</i>
           More
         </div>
@@ -78,8 +77,121 @@
     </nav>
     <!-- Main Container -->
     <div class="container">
+
+
+      <div class="sidebar">
+        <div class="filter">
+          <i class="material-icons-outlined align-middle mr-1">filter_list</i> <span>Filter</span>
+        </div>
+        <div class="fliter-list">
+          <div class="list-heading">
+            <span class="margin"><span class="material-icons">expand_more
+              </span>
+              Margin<span class="fund-required">(Funds Required)</span>
+            </span>
+            <div class="line"></div>
+            <div class="hide">
+
+              <div class="list-content">
+                <input type="checkbox" name="" id="25" value=""><label for="25" class="radio-label">Under 25k</label>
+              </div>
+              <div class="list-content">
+                <input type="checkbox" name="" id="1l" value=""><label for="1l" class="radio-label">25k to 1
+                  Lakhs</label>
+              </div>
+              <div class="list-content">
+                <input type="checkbox" name="" id="2l" value=""><label for="2l" class="radio-label">1 Lakhs to 2
+                  Lakhs</label>
+              </div>
+              <div class="list-content">
+                <input type="checkbox" name="" id="above" value=""><label for="above" class="radio-label">Above 2
+                  Lakhs</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="list-heading">
+            <span class="margin" style="padding: 1rem 0 0 0;"><span class="material-icons">expand_more
+              </span>Category</span>
+            <div class="line"></div>
+            <div id="hide">
+
+              <div class="list-content">
+                <input type="checkbox" name="" id="option-buying" value=""><label for="option-buying"
+                  class="radio-label">Options Buying</label>
+              </div>
+              <div class="list-content">
+                <input type="checkbox" name="" id="option-selling" value=""><label for="option-selling"
+                  class="radio-label">Options Selling</label>
+              </div>
+              <div class="list-content">
+                <input type="checkbox" name="" id="mixed" value=""><label for="mixed" class="radio-label">Mixed </label>
+              </div>
+              <div class="list-content">
+                <input type="checkbox" name="" id="others" value=""><label for="others"
+                  class="radio-label">Others</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="list-heading">
+            <span class="margin" style="padding: 1rem 0 0 0;"><span class="material-icons">expand_more
+              </span>Statements & Instruments</span>
+            <div class="line"></div>
+            <div id="hide">
+              <div class="segment">Segment</div>
+
+              <div class="list-content">
+                <input type="checkbox" name="" id="option-buying" value=""><label for="option-buying"
+                  class="radio-label">Future & option</label>
+              </div>
+              <div class="list-content">
+                <input type="checkbox" name="" id="option-selling" value=""><label for="option-selling"
+                  class="radio-label">Equity & Index</label>
+              </div>
+
+              <div class="segment">Instruments</div>
+
+              <div class="list-content">
+                <input type="checkbox" name="" id="option-buying" value=""><label for="option-buying"
+                  class="radio-label">NFO:BANKNIFY</label>
+              </div>
+              <div class="list-content">
+                <input type="checkbox" name="" id="option-selling" value=""><label for="option-selling"
+                  class="radio-label">NFO:NIFTY</label>
+              </div>
+              <div class="list-content">
+                <input type="checkbox" name="" id="option-selling" value=""><label for="option-selling"
+                  class="radio-label">NFO:ICICBANK</label>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <span class="all-strategy">
+        <div class="startegy">All Strategy</div>
+      </span>
+      <!-- <div class="card">
+        <div class="card-heading">
+          PropDesk Buying 01
+        </div>
+      </div> -->
+
+
+
+
+
+
+
+
+
+
+
       <!-- <div class="content-area"> -->
-        <div class="content-section">
+      <!-- <div class="content-section">
           <div class="content-left">
             <div class="card">
               <div class="card-header">
@@ -144,9 +256,9 @@
                 </div>
               </div>
             </div>
-        </div>
+        </div> -->
       <!-- </div> -->
-            
+
     </div>
     <!-- Footer Section -->
     <div class="ft-section">
@@ -190,48 +302,21 @@
             </div>
           </a>
         </div>
-    
+
         <div class="footer-link">
-          <a
-            class="track"
-            href="#"
-            title="Terms & Conditions"
-            data-track-category="Footer"
-            data-track-action="termandconditions"
-            data-track-label="Footer track"
-            ><u>Terms & Conditions</u></a
-          >
+          <a class="track" href="#" title="Terms & Conditions" data-track-category="Footer"
+            data-track-action="termandconditions" data-track-label="Footer track"><u>Terms & Conditions</u></a>
           <span>|</span>
-          <a
-            class="track"
-            href="#"
-            title="Faq"
-            target="_blank"
-            data-track-category="Footer"
-            data-track-action="FAQ"
-            data-track-label="Footer track"
-            rel="noreferrer"
-            ><u>Faq</u></a
-          >
+          <a class="track" href="#" title="Faq" target="_blank" data-track-category="Footer" data-track-action="FAQ"
+            data-track-label="Footer track" rel="noreferrer"><u>Faq</u></a>
           <span>|</span>
-          <a
-            class="track"
-            href="#"
-            title="About Us"
-            data-track-category="Footer"
-            data-track-action="aboutus"
-            data-track-label="Footer track"
-            ><u>About Us</u></a
-          >
+          <a class="track" href="#" title="About Us" data-track-category="Footer" data-track-action="aboutus"
+            data-track-label="Footer track"><u>About Us</u></a>
           <span>|</span>
-          <span class="text-muted"
-            >Copyright © 2022, Quantman. All rights reserved.</span
-          >
-          <div class="test-git">
-            Hello git 
-          </div>
+          <span class="text-muted">Copyright © 2022, Quantman. All rights reserved.</span>
         </div>
+      </div>
     </div>
-  </div>
   </body>
+
 </html>
