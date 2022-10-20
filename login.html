@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title>Quantman</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="login.css" />
+  </head>
+  <body>
+    <div class="container">
+
+        <!-- Login form -->
+        <form action="" class="form  " id="login">
+            <h1 class="form-title">Login</h1>
+            <div class="form-message form-message-error"></div>
+
+            <div class="input-container">
+                <input type="text" class="form-input" autofocus placeholder="Username or Email id">
+            </div>
+
+            <div class="input-container">
+                <input type="password" class="form-input "  autofocus placeholder="Password">
+            </div>
+
+            <button class="form-button">Continue</button>
+
+            <p class="form-text">
+                <a href="#" id="linkForgotPassword" class="form-link">Forgot Password</a>
+            </p>
+
+            <p class="form-text">
+                <a href="#" id="linkCreatAccount" class="form-link">Don't have an account? Create one</a>
+            </p>
+
+        </form>
+
+        <!-- Creat account-->
+        <form action="" class="form form-hidden " id="creatAccount">
+            <h1 class="form-title">Creat Account</h1>
+            <div class="form-message form-message-error"></div>
+
+            <div class="input-container">
+                <input type="text" class="form-input" autofocus placeholder="Username">
+            </div>
+
+            <div class="input-container">
+                <input type="text" class="form-input" placeholder="Email Address">
+            </div>
+
+            <div class="input-container">
+                <input type="password" class="form-input " placeholder="Password">
+            </div>
+
+            <div class="input-container">
+                <input type="password" class="form-input " placeholder="Conform Password">
+            </div>
+
+
+            <button class="form-button">Login </button>
+
+            <p class="form-text">
+                <a href="#" id="linkLogin" class="form-link">Alrady have an account? Sign in</a>
+            </p>
+
+        </form>
+
+        <!-- Reset Password -->
+        <form action="" class="form form-hidden" id="resetPassword">
+            <h1 class="form-title">Reset Password</h1>
+            <div class="form-message form-message-error"></div>
+
+            <div class="input-container">
+                <input type="text" class="form-input" autofocus placeholder="Password">
+            </div>
+
+            <div class="input-container">
+                <input type="password" class="form-input "  autofocus placeholder="Re-enter Password">
+            </div>
+
+            <button class="form-button">Reset</button>
+
+            <p class="form-text">
+                <a href="#" id="linkBackLogin"  class="form-link">Back to Login Page</a>
+            </p>
+
+        </form>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
