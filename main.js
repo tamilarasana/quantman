@@ -134,3 +134,7 @@ linkLogin.onclick = function() {
 
 
 
+// const hide = document.getElementsByClassName("margin")
+// hide.addEventListener('click', ()=>{
+//     hide.style.display='none';
+// });
